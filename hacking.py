@@ -3,7 +3,7 @@ from pygame.locals import *
 from sys import exit
 from random import randrange, choice
 from time import sleep
-import py.trabalho_do_colegio.py.hackingR as hackingR
+import py.trabalho_do_colegio.hackingR as hackingR
 
 pygame.init()
 
