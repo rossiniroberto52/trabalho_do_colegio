@@ -3,7 +3,7 @@ import os
 import sys
 import math
 from time import sleep
-import hacking
+
 
 PRETO = (0, 0, 0)
 BRANCO = (255, 255, 255)
@@ -28,15 +28,18 @@ fonte = pygame.font.Font(None, 48)
 texto = fonte.render('hacking ...', True, VERDE)
 janela.blit(texto, (100, 100))
 
-texto2 = fonte.render('hacking stats: Ready', True, VERMELHO)
-janela.blit(texto2, (300,100))
+texto2 = fonte.render('hacking stats: Ready. enter on await mode', True, VERMELHO)
+janela.blit(texto2, (100,200))
 pygame.display.update()
 
 arquivo = open("contatos.txt", "a")
-arquivo.write("user: PFAdmin135RT senha: PFAdminRT")
+arquivo.write("user: PFAdmin135RTsenha: PFAdminRT")
 pygame.display.update(sleep(5))
 
 pygame.display.update()
+
+import hacking
+
 deve_continual = True
 
 while deve_continual:
