@@ -3,7 +3,7 @@ from pygame.locals import *
 from sys import exit
 from random import randrange, choice
 from time import sleep
-import py.trabalho_do_colegio.hackingR as hackingR
+import os
 
 pygame.init()
 
@@ -17,7 +17,7 @@ color_change = 0
 
 FONT_SIZE = 8
 
-FPS = 15
+FPS = 20
 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
@@ -35,6 +35,9 @@ pygame.display.set_caption('Matrix Animation')
 font = pygame.font.SysFont('arial', FONT_SIZE, True, True)
 #message = 'hello world'
 #text = font.render(message, True, GREEN)
+
+#arquivo = open("contatos.txt", "a")
+#arquivo.write("user: PFAdmin135RT senha: PFAdminRT")
 
 class Codeline:
     def __init__(self):
@@ -99,6 +102,8 @@ initial_time = 0
 current_time = 0
 color_time = 0
 
+
+
 while True:
     clock.tick(FPS)
     screen.fill(BLACK)
@@ -120,6 +125,4 @@ while True:
     create_multiples_obj(obj_list, number_of_obj, generate)
 
     pygame.display.flip()
-
-
 
